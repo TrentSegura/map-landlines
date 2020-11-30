@@ -48,7 +48,7 @@ export class Marker extends Component {
 
                 popup.on('open', function(){
                     map.flyTo({
-                        center: [place.longitude, (place.latitude + .015)],
+                        center: [place.longitude, (place.latitude - .015)],
                         zoom: 12,
                     })
                 });
