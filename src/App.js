@@ -3,16 +3,6 @@ import './App.css';
 import Map from './components/Map'
 import Marker from './components/Marker'
 import Pins from './components/Pins'
-import Pins01 from './components/Pins01'
-import Pins02 from './components/Pins02'
-import Pins03 from './components/Pins03'
-import Pins04 from './components/Pins04'
-import Pins05 from './components/Pins05'
-
-import Pins06 from './components/Pins06'
-import Pins07 from './components/Pins07'
-import Pins08 from './components/Pins08'
-
 
 
 
@@ -30,17 +20,7 @@ export class App extends Component {
     
     return (
       <div className="App">
-
         <Map app={this} />
-        <Pins08 app={this}/>
-        <Pins07 app={this}/>
-        <Pins06 app={this}/>
-
-        <Pins05 app={this}/>
-        <Pins04 app={this}/>
-        <Pins03 app={this}/>
-        <Pins02 app={this}/>
-        <Pins01 app={this}/>
         <Pins app={this}/>
         <Marker app={this}/>
         <div className="Mapoverlay">

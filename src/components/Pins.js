@@ -1,27 +1,41 @@
 import React, { Component } from 'react'
 import mapbox from 'mapbox-gl';
 import './Pins.css'
-import arts from '../data/arts.json'
+import data from '../data/map.json'
 
 export class Pins extends Component {
     render() {
         const app = this.props.app
         const map = app.state.map
 
+        console.log(data.features.properties)
         
 
         if (map){
         
-            arts.features.forEach((art) => {
-                const coord = [art.geometry.coordinates[0], art.geometry.coordinates[1]]
+            data.features.forEach((place) => {
+                const coord = [place.geometry.coordinates[0], place.geometry.coordinates[1]]
             
                 const popup = new mapbox.Popup()
-                popup.setMaxWidth("300px")
+                popup.setMaxWidth("400px")
 
                 popup.setHTML(
+                    place.properties.description ?
+
                     `
                     <div class="mapboxgl-popup-content-header">
-                    <h3>${art.properties.Name}</h3>
+                    <h3>${place.properties.name}</h3>
+                    </div>
+                    <div class="description">
+                    ${place.properties.description}
+                    </div>
+                    `               
+
+                    :
+
+                    `
+                    <div class="mapboxgl-popup-content-header">
+                    <h3>${place.properties.name}</h3>
                     </div>
                     ` )                
 
