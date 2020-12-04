@@ -25,6 +25,9 @@ export class Pins extends Component {
                     <div class="mapboxgl-popup-content-header">
                     <h3>${landItem.properties.Name}</h3>
                     </div>
+                    <div class="description">
+                    ${landItem.properties.description}
+                    </div>
                     ` )                
 
 
