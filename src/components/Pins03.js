@@ -23,7 +23,9 @@ export class Pins extends Component {
                 popup.setHTML(
                     `<div class="mapboxgl-popup-content-header">
                     <h3>${landItem.properties.Name}</h3>
-                    </div>`)                
+                    </div>
+                    
+                    `)                
 
 
                 var el = document.createElement('div');

@@ -52,12 +52,12 @@ export class Marker extends Component {
                         zoom: 12,
                     })
                 });
-                // popup.on('close', function(){
-                //     map.flyTo({
-                //         center: [app.state.longitude, app.state.latitude],
-                //         zoom: 9,
-                //     })
-                // });
+                popup.on('close', function(){
+                    map.flyTo({
+                        center: [app.state.longitude, app.state.latitude],
+                        zoom: 9,
+                    })
+                });
 
                 var el = document.createElement('div');
                 el.id = 'marker';
