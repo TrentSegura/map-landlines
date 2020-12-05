@@ -17,21 +17,21 @@ export class Pins extends Component {
                 const coord = [place.geometry.coordinates[0], place.geometry.coordinates[1]]
             
                 const popup = new mapbox.Popup()
-                popup.setMaxWidth("400px")
+                popup.setMaxWidth("350px")
 
                 popup.setHTML(
-                    place.properties.description ?
+                    // place.properties.description ?
 
-                    `
-                    <div class="mapboxgl-popup-content-header">
-                    <h3>${place.properties.name}</h3>
-                    </div>
-                    <div class="description">
-                    ${place.properties.description}
-                    </div>
-                    `               
+                    // `
+                    // <div class="mapboxgl-popup-content-header">
+                    // <h3>${place.properties.name}</h3>
+                    // </div>
+                    // <div class="description">
+                    // ${place.properties.description}
+                    // </div>
+                    // `               
 
-                    :
+                    // :
 
                     `
                     <div class="mapboxgl-popup-content-header">
