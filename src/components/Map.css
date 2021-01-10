@@ -18,6 +18,22 @@ Embeded mapbox styles
     border-right-color: #121212;
 }
 
+.mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
+    border-bottom-color: #121212;
+}
+
+.mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip {
+    border-bottom-color: #121212;
+}
+
+.mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
+    border-top-color: #121212;
+}
+
+.mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip {
+    border-top-color: #121212;
+}
+
 div.mapboxgl-popup-content{
     background-color: #121212;
     color: rgb(218, 218, 218);

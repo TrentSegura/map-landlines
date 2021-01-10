@@ -86,7 +86,7 @@ h1{
 
 
 section.about{
-    max-width: 60ch;
+    max-width: 62ch;
     min-height: 100vh;
     margin: 0 7.5vw;
     padding: 7.5vw 0;
@@ -105,6 +105,7 @@ div.contributors{
 
 .contributors h3{
   text-transform: uppercase;
+  font-weight: 800;
 }
 
 .contributors ul{
@@ -148,25 +149,43 @@ div.contributors{
 
 }
 .site-info{
-    max-width: 450px;
-    margin-left: 7.5vw;
+    max-width: 400px;
+    margin: 7.5vw;
+    /* margin-left: 7.5vw;
+    margin-right: 7.5vw;
+    padding-bottom: 7.5vw; */
 }
 
 
 .mc-field-group{
-    border-bottom: 1px solid #fff;
-    padding-bottom: 5px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
 }
 
 #mc_embed_signup_scroll h2{
-    margin-bottom: 20px;
-    line-height: 1.3;
-    text-transform: uppercase;
-    font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  font-size: 30px;
 }
 
 .mm-name>*{
-    width: 50%;
+  width: 50%;
+}
+
+@media (max-width: 460px){
+  .mm-name>*{
+    width: 100%;
+  }
+
+  .flex{
+    display: block !important;
+  }
+
+  #mc_embed_signup_scroll h2{
+    font-size: 19px;
+  }
 
 }
 

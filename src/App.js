@@ -3,6 +3,8 @@ import './App.css';
 import Map from './components/Map'
 import Marker from './components/Marker'
 import Pins from './components/Pins'
+import Home from './components/Home'
+
 
 
 
@@ -13,7 +15,8 @@ export class App extends Component {
     this.state = {
       map: null,
       latitude: 37.57259827614173,
-      longitude: -106.09388182533371
+      longitude: -106.09388182533371,
+      zoom: 9
     }
   }
   render() {
@@ -23,6 +26,7 @@ export class App extends Component {
         <Map app={this} />
         <Pins app={this}/>
         <Marker app={this}/>
+        <Home app={this} />
         <div className="Mapoverlay">
           <h1>Landlines</h1>
           <h2>M12 Studio</h2>
