@@ -7,3 +7,17 @@
   content: "⚪";
   font-size: 10px;
 }
+
+.mapboxgl-popup-content .pins{
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0px;
+}
+
+.pins h3{
+  padding: 10px;
+  margin: 0;
+}

@@ -18,7 +18,7 @@ export default class Home extends Component {
             <div className="home-btn">
                 <button onClick={()=>  map.flyTo({
                         center: [app.state.longitude, app.state.latitude],
-                        zoom: 9,
+                        zoom: 8.5,
                     })
             }><FontAwesomeIcon icon={faHome} /></button>
             </div>

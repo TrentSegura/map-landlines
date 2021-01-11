@@ -1,7 +1,69 @@
+@import url("https://use.typekit.net/myj5oak.css");
+
 #marker {
     background-image: url('../assets/landlines_marker.svg'); 
     background-size: cover;
     width: 30px;
     height: 30px;
     cursor: pointer;
+}
+
+.slider{
+  padding: 40px 0;
+}
+
+.slider .slider-items .item{
+  display: none;
+}
+
+.slider .slider-items .item.active{
+  display: block;
+}
+
+.controls{
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls>*{
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* POP UP */
+.mapboxgl-popup-content-marker {
+  font-family: proxima-nova, sans-serif;
+  font-style: normal;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0px;
+  padding-bottom: 10px;
+}
+
+
+.mapboxgl-popup-content-marker h3{
+  font-weight: 400 !important;
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+.mapboxgl-popup-content-marker h4{
+  font-size: 20px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.mapboxgl-popup-content-marker .title{
+  padding: 0 20px;
+}
+
+.mapboxgl-popup-content-marker p{
+  padding: 0 20px;
+  font-size: 14px;
+}
+
+.mapboxgl-popup-content{
+  padding: 0;
 }

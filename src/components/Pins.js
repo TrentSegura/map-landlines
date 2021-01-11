@@ -6,10 +6,7 @@ import data from '../data/map.json'
 export class Pins extends Component {
     render() {
         const app = this.props.app
-        const map = app.state.map
-
-        console.log(data.features.properties)
-        
+        const map = app.state.map        
 
         if (map){
         
@@ -34,9 +31,12 @@ export class Pins extends Component {
                     // :
 
                     `
-                    <div class="mapboxgl-popup-content-header">
+
+                    <div class="pins">
                     <h3>${place.properties.name}</h3>
+                    <img src="http://richardsaxton.org/websites/m12_landlines/landmarks/${place.properties.images}">
                     </div>
+                    
                     ` )                
 
 

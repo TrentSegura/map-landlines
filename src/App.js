@@ -16,7 +16,7 @@ export class App extends Component {
       map: null,
       latitude: 37.57259827614173,
       longitude: -106.09388182533371,
-      zoom: 9
+      zoom: 8.5
     }
   }
   render() {
@@ -31,6 +31,7 @@ export class App extends Component {
           <h1>Landlines</h1>
           <h2>M12 Studio</h2>
         </div>
+        <div id="popup"></div>
       </div>
     )
   }

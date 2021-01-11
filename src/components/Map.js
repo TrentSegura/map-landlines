@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import './Map.css';
 import mapbox from 'mapbox-gl';
-import { placeData } from '../data/data'
+import projects from '../data/projects.json';
+
 
 export class Map extends Component {
 
@@ -36,7 +37,11 @@ export class Map extends Component {
             map: map
         })
 
+
         map.on('load', function () {
+
+            
+                
 
             map.addSource('landlines', {
                 'type': 'geojson',
@@ -46,33 +51,14 @@ export class Map extends Component {
                     'geometry': {
                         'type': 'LineString',
                         'coordinates': [
-                            placeData[0].coordinates,
-                            placeData[1].coordinates,
-                            placeData[6].coordinates,
-                            placeData[11].coordinates,
-                            placeData[3].coordinates,
-                            placeData[16].coordinates,
-                            placeData[10].coordinates,
-                            placeData[6].coordinates,
-                            placeData[5].coordinates,
-                            placeData[12].coordinates,
-                            placeData[8].coordinates,
-                            placeData[4].coordinates,
-                            placeData[7].coordinates,
-                            placeData[9].coordinates,
-                            placeData[14].coordinates,
-                            placeData[4].coordinates,
-                            placeData[8].coordinates,
-                            placeData[11].coordinates,
-                            placeData[14].coordinates,
-                            placeData[15].coordinates,
-                            placeData[0].coordinates,
-                            placeData[2].coordinates,
-                            placeData[13].coordinates,
-                            placeData[4].coordinates,
-                            placeData[9].coordinates,
-                            placeData[2].coordinates,
-                            placeData[3].coordinates,
+                            [-106.14563226699829,38.08748186656206],
+                            [-105.52831649780273,37.74139927315054],
+                            [-105.87673326457147,37.46810043923201],
+                            [-105.9272,37.1054],
+                            [-105.62305748462676,37.00289111300673],
+                            [-105.92538051959495,37.06187200399451],
+                            [-105.4632568359375,37.189860709456596],
+                            [-106.14563226699829,38.08748186656206]
                             ]
                         }
                     }    
