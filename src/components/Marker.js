@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import mapbox from 'mapbox-gl' 
 import './Marker.css';
 import data from '../data/landlines.json'
-import $ from 'jquery'
+
 
 
 export class Marker extends Component {

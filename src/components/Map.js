@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './Map.css';
 import mapbox from 'mapbox-gl';
-import projects from '../data/projects.json';
+
 
 
 export class Map extends Component {
