@@ -14,27 +14,25 @@ export class Pins extends Component {
                 const coord = [place.geometry.coordinates[0], place.geometry.coordinates[1]]
             
                 const popup = new mapbox.Popup()
-                popup.setMaxWidth("350px")
+                popup.setMaxWidth("250px")
 
                 popup.setHTML(
-                    // place.properties.description ?
+                    place.properties.images ?
 
-                    // `
-                    // <div class="mapboxgl-popup-content-header">
-                    // <h3>${place.properties.name}</h3>
-                    // </div>
-                    // <div class="description">
-                    // ${place.properties.description}
-                    // </div>
-                    // `               
+                    `
+                    <div class="pins">
+                    <img src="http://richardsaxton.org/websites/m12_landlines/landmarks/${place.properties.images}">
+                    <h3>${place.properties.name}</h3>
+                    </div>
+                    
+                    `               
 
-                    // :
+                    :
 
                     `
 
                     <div class="pins">
                     <h3>${place.properties.name}</h3>
-                    <img src="http://richardsaxton.org/websites/m12_landlines/landmarks/${place.properties.images}">
                     </div>
                     
                     ` )                
