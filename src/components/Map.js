@@ -25,12 +25,14 @@ export class Map extends Component {
             minZoom: 1,
             maxZoom: 13,
             attributionControl: false,
-            maxBounds: bounds
+            maxBounds: bounds,
+            maxPitch: 0
             });
         
         map.scrollZoom.disable();
+        map.dragRotate.disable();
 
-        const nav = new mapbox.NavigationControl();
+        const nav = new mapbox.NavigationControl({showCompass: false});
         map.addControl(nav, 'bottom-right');
 
         this.props.app.setState({

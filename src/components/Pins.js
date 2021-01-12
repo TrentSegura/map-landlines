@@ -15,8 +15,8 @@ export class Pins extends Component {
             
                 const popup = new mapbox.Popup()
                 
-                place.properties.images ?
-                popup.setMaxWidth("200px") : popup.setMaxWidth("auto")
+                
+                popup.setMaxWidth("200px")
                
 
                 popup.setHTML(
@@ -43,6 +43,7 @@ export class Pins extends Component {
                     </div>
                     
                     ` )                
+
 
 
                 var el = document.createElement('div');
