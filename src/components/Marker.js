@@ -106,6 +106,15 @@ export class Marker extends Component {
                     })
                 });
 
+                // const closePopup = document.querySelector('button.mapboxgl-popup-close-button')
+
+                // closePopup.onclick( function(){
+                //     map.flyTo({
+                //         center: [app.state.longitude, app.state.latitude],
+                //         zoom: 8.5,
+                //     })
+                // });
+
                 var el = document.createElement('div');
                 el.id = 'marker';
                 const marker = new mapbox.Marker(el)

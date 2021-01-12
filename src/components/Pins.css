@@ -5,7 +5,7 @@
 
 #pin-marker::after{
   content: "⚪";
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .mapboxgl-popup-content .pins{
@@ -15,6 +15,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 0px;
+  width: 200px;
 }
 
 .pins h3{
@@ -25,4 +26,21 @@
 .pins img{
   width: 100%;
   height: auto;
+}
+
+.pb-container{
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 66.66%;
+  overflow: hidden;
+}
+
+.pb-container img{
+  position: absolute;
+  top: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center;
 }

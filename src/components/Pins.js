@@ -14,14 +14,18 @@ export class Pins extends Component {
                 const coord = [place.geometry.coordinates[0], place.geometry.coordinates[1]]
             
                 const popup = new mapbox.Popup()
-                popup.setMaxWidth("250px")
+                popup.setMaxWidth("200px")
 
                 popup.setHTML(
                     place.properties.images ?
 
                     `
                     <div class="pins">
+                   
+                    <div class="pb-container">
                     <img src="http://richardsaxton.org/websites/m12_landlines/landmarks/${place.properties.images}">
+                    </div>
+                                  
                     <h3>${place.properties.name}</h3>
                     </div>
                     
