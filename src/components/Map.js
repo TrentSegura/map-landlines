@@ -207,7 +207,7 @@ export class Map extends Component {
                     },
                 'paint': {
                     'line-color': '#f9dec2',
-                    'line-opacity': 0.25,
+                    'line-opacity': 0.3,
                     'line-width': 1
                  }
             });
