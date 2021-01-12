@@ -4,6 +4,7 @@ import Map from './components/Map'
 import Marker from './components/Marker'
 import Pins from './components/Pins'
 import Home from './components/Home'
+import Lines from './components/Lines'
 
 
 
@@ -24,6 +25,7 @@ export class App extends Component {
     return (
       <div className="App">
         <Map app={this} />
+        <Lines app={this}/>
         <Pins app={this}/>
         <Marker app={this}/>
         <Home app={this} />

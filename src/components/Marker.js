@@ -99,10 +99,21 @@ export class Marker extends Component {
                     `
                 )
 
+
+    
+
+
                 popup.on('open', function(){
                     map.flyTo({
                         center: [project.geometry.coordinates[0], (project.geometry.coordinates[1] + 0.050)],
                         zoom: 12,
+                    })
+                });
+
+                popup.on('close', function(){
+                    map.flyTo({
+                        center: [app.state.longitude, app.state.latitude],
+                        zoom: 8.5,
                     })
                 });
 
