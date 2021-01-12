@@ -13,7 +13,7 @@ export class Pins extends Component {
             data.features.forEach((place) => {
                 const coord = [place.geometry.coordinates[0], place.geometry.coordinates[1]]
             
-                const popup = new mapbox.Popup({closeButton: false})
+                const popup = new mapbox.Popup()
                 
                 place.properties.images ?
                 popup.setMaxWidth("200px") : popup.setMaxWidth("auto")
